@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AiOutlineBook, AiOutlineCoffee, AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineStock } from 'react-icons/ai'
+import { AiOutlineBook, AiOutlineCoffee, AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineShopping, AiOutlineStock } from 'react-icons/ai'
 
 
 const SideNav = () => {
@@ -35,21 +35,21 @@ const SideNav = () => {
                 burguerMenu ?
                     
 
-                    <div className="fixed w-full h-screen flex flex-col items-center justify-center text-center text-xl  z-20 gap-10 text-white font-bold bg-black/60">
+                    <div className="fixed w-full h-screen flex flex-col items-center justify-center text-center text-xl  z-20 gap-10 text-white font-bold bg-black/70">
                         
-                        <a href="#main" className="flex">
+                        <a onClick={handleBurguerMenu} href="#main" className="flex">
                             <AiOutlineHome size={30} className="flex justify-center w-[95%] " />
                             <span className="pl-2">Home</span>
                         </a>
-                        <a href="#about" className="flex">
+                        <a onClick={handleBurguerMenu} href="#about" className="flex">
                             <AiOutlineCoffee size={30} className="flex justify-center w-[95%]" />
                             <span className="pl-2">About</span>
                         </a>
-                        <a href="#pages" className="flex">
-                            <AiOutlineBook size={30} className="flex justify-center w-[95%]" />
-                            <span className="pl-2">Pages</span>
+                        <a onClick={handleBurguerMenu} href="#pages" className="flex">
+                            <AiOutlineShopping size={30} className="flex justify-center w-[95%]" />
+                            <span className="pl-2">Services</span>
                         </a>
-                        <a href="#contact" className="flex">
+                        <a onClick={handleBurguerMenu} href="#contact" className="flex">
                             <AiOutlineMail size={30} className="flex justify-center w-[95%]" />
                             <span className="pl-2">Contact</span>
                         </a>
